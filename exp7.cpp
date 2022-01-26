@@ -33,7 +33,7 @@ int main()
 			ch[1]='\0';
 			i++;
 			strcat(stack,ch);
-			cout<<stack<<"\n";
+			cout<<stack<<"\tShift"<<"\n";
 		}
 		for(j=0;j<count;j++)
 		{
@@ -45,7 +45,7 @@ int main()
 				s=s1-s2;
 				stack[s]='\0';
 				strcat(stack,p[j].p1);
-				cout<<stack<<"\n";
+				cout<<stack<<"\tReduce"<<"\n";
 				j=-1;
 			}
 		}
